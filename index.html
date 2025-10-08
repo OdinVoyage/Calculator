@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculaotr by Mncd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="numbers">
+            <button onclick="displayValue('1')">1</button>
+            <button onclick="displayValue('2')">2</button>
+            <button onclick="displayValue('3')">3</button>
+            <button onclick="displayValue('4')">4</button>
+            <button onclick="displayValue('5')">5</button>
+            <button onclick="displayValue('6')">6</button>
+            <button onclick="displayValue('7')">7</button>
+            <button onclick="displayValue('8')">8</button>
+            <button onclick="displayValue('9')">9</button>
+            <button onclick="displayValue('.')">.</button>
+            <button onclick="displayValue('0')">0</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        <div class="operators">
+            <button onclick="clearAll()">C</button>
+            <button onclick="displayValue('+')">+</button>
+            <button onclick="displayValue('-')">-</button>
+            <button onclick="displayValue('x')">x</button>
+            <button onclick="displayValue('/')">/</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

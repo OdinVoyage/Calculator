@@ -1,0 +1,57 @@
+body {
+  background-color: #36404f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "display display"
+    "numbers operators";
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  width: 350px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+.display {
+  grid-area: display;
+}
+
+.display input {
+  width: 100%;
+  padding-top: 13px;
+  text-align: right;
+  background-color: rgb(201, 201, 201);
+  font-size: 40px;
+}
+
+.numbers {
+  grid-area: numbers;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.numbers button {
+  background-color: #36404f;
+  color: white;
+}
+
+.operators {
+  grid-area: operators;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.operators button {
+  background-color: #36404f;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+}
