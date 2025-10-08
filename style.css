@@ -10,6 +10,7 @@ body {
   display: grid;
   grid-template-areas:
     "display display"
+    "delete delete"
     "numbers operators";
   grid-template-columns: 3fr 1fr;
   gap: 10px;
@@ -28,6 +29,31 @@ body {
   text-align: right;
   background-color: rgb(201, 201, 201);
   font-size: 40px;
+}
+
+.delete {
+  grid-area: delete;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.delete .back {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  background-color: #36404f;
+  color: white;
+  cursor: pointer;
+}
+
+.delete .clear {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  background-color: #36404f;
+  color: white;
+  cursor: pointer;
 }
 
 .numbers {

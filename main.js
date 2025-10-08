@@ -93,5 +93,15 @@ function calculate() {
     result.value = resultValue;
   }
 
-  console.log("tokens: ");
+  console.log("tokens: ", token);
+}
+
+function backspace() {
+  if (result?.value?.length > 0) {
+    result.value = result.value.slice(0, -1);
+  }
+  // const current = result.value;
+  // current.length > 0
+  //   ? (result.value = current.substring(0, current.length - 1))
+  //   : null;
 }

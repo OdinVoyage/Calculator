@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculaotr by Mncd</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div id="container">
         <div class="display">
             <input type="text" id="result" readonly>
+        </div>
+        <div class="delete">
+            <button onclick="clearAll()" class="clear">C</button>
+            <!-- <button onclick="displayValue('%')">%</button> -->
+            <button onclick="backspace()" class="back"><i class="material-icons">&#xe14a;</i> </button>
         </div>
         <div class="numbers">
             <button onclick="displayValue('1')">1</button>
@@ -28,7 +34,6 @@
             <button onclick="calculate()">=</button>
         </div>
         <div class="operators">
-            <button onclick="clearAll()">C</button>
             <button onclick="displayValue('+')">+</button>
             <button onclick="displayValue('-')">-</button>
             <button onclick="displayValue('x')">x</button>
